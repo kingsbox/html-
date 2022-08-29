@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一个网站</title>
+    <style>
+        .ysa{
+            width: 500px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="ysa">
+    <h1><strong>>king</strong></h1>
+    <h2><em>king</em></h2>
+   <h3> <del>king</del></h3>
+    <h4><ins>king</ins></h4>
+    <p>我是一个段落标签，可以用于分段</p>
+    <p>在中国教育行业发展的轨迹中，br可用于换行</br>能始忠秉承着初心做教育的企业为数不多。</p>
+    <div>该标签但独占一行</div>
+    <div>该标签单独占一行,用来装内容等于大盒子</div>
+    <span>百度</span>
+    <span>QQ</span>
+    <span>小盒子</span>
+    <h2>src为图片路径</h2>
+    <img src="img.jpg"/>
+    <h2>alt为替换文本，主要作用图像显示不出来的时候用文字代替</h2>
+    <img src="img1.jpg" alt="我是king"/>
+    <h2>title 提示标签，当鼠标放在图片上时提示的文字</h2>
+    <img src="img.jpg" title="我是king"/>
+    <h2>width给图像设置宽度</h2>
+    <img src="img.jpg" alt="" width="500"/>
+    <h2>hight给图像设置高度</h2>
+    <img src="img.jpg" alt=""hight="100"/>
+    <h2>border给图像设置边框粗细</h2>
+    <img src="img.jpg" alt="" border="15"/>
+    <h2>href用于指定目标的ur可添加网站</h2>
+    <a href="http://www.baidu.com">百度</a>
+    <h2>target打开网站的方式 -self为当前窗口打开 -blank为新窗口打开</h2>
+    <a href="http://www.baidu.com" target="_self">百度</a>
+    <a href="http://www.baidu.com" target="_blank">百度</a> 
+    <h2>当网址不确定的时候可以设置空链接</h2>
+    <a href="#">空链接</a>
+
+    <a href="#king">锚点链接</a><br />
+    <h3>刘德华（Andy Lau），1961年9月27日出生于中国香港</h3>
+   <p> 中国香港影视男演员、歌手、制片人、作词</p>
+   <p> 1981年出演电影处女作《彩云曲》</p>
+    <h4 id="king">刘德华出生于香港新界，在家中排行老四</h4>
+
+     <h2>注释标签直接CTRL+/</h2>
+     
+     <h2>空格用&nbsp;</h2>
+     <h2>大于号用&it;</h2>
+     <h2>大于号用&gt;</h2>
+     <h2>乘号用&times;</h2>
+     <h2>除号用&divide;</h2>
+<!-- table是表格标签 -->
+<!-- tr是表格中的行 -->
+<!-- td是表格中的单元格 -->
+<!-- th是表头单元格可以加粗居中 -->
+<!-- align是属性要加到table里面去 -->
+<!-- center要加到align后面 -->
+<!-- border是添加表格边框的 -->
+<!-- cellpadding规定单元格边缘与其内容之间的空白 -->
+<!-- cellspacing规定单元格之间的空白 -->
+<!-- width规定表格的宽度 -->
+<!-- height规定表格高度 -->
+     <table align="center"border="1"cellpadding="20" cellspacing="2">
+        <tr><th>姓名</th>  <th>性别</th>  <th>年龄</th></tr>
+        <tr><td>刘福文</td>  <td>男</td>  <td>18</td></tr>
+        <tr><td>刘德华</td>  <td>男</td>  <td>20</td></tr>
+        <tr><td>黄强</td>  <td> 男</td>  <td>19</td></tr>
+     </table>
+
+<h2>合并单元格</h2>
+<!-- 跨列合并单元格用colspan="合并单元格的个数" -->
+<!-- 跨行合并单元格用rowspan="合并单元格个数" -->
+     <table width="500" height="250" border="1">
+        <tr><td></td>  <td colspan="2"></td></tr>
+        <tr><td rowspan="3"></td>  <td></td>  <td></td></tr>
+        <tr> <td></td>  <td></td></tr>
+        <tr> <td></td>  <td></td></tr>
+     </table>
+
+<h2>列表标签</h2>
+<!-- 无序列表可用<ul></ul>和<li></li> -->
+<!-- <ul></ul>里面只能用<li></li>,<li></li>里面可以输入其他标签 -->
+    <ul>
+        <li>列表一</li>
+        <li>列表二</li>
+        <li>列表三</li>
+        <li>列表四</li>
+    </ul>
+<!-- 有序列表用<ol></ol>里面嵌套<li></li>,用法和<ul></ul>一样 -->
+<!-- 自定义列表用<dl></dl>,<dt></dt>,<dd></dd> -->
+<!-- <dl></dl>中只能包含<dt></dt>和<dd></dd>,但是<dt></dt>和<dd></dd>可以包含其他标签 -->
+    <dl>
+        <dt>关注我们</dt>
+        <dd>新浪微博</dd>
+        <dd>官方微信</dd>
+        <dd>联系我们</dd>
+    </dl>
+
+<h2>表单域后期学习</h2>
+<!-- <input type="属性值"> -->
+<h3>属性值可为</h3>
+<!-- text为定义单行输入字段，用户可在其中输入文本。默认宽度为20个字符。 -->
+<!-- submit定义提交按钮，把表单数据发送到服务器 -->
+<!-- reset定义重置按钮，重置表单中的所有数据 -->
+<!-- radio定义单选按钮 -->
+<!-- password定义密码字段，该字段的字符会被掩码 -->
+<!-- image定义图像形式的按钮 -->
+<!-- hidden定义隐藏输入的字段 -->
+<!-- file定义输入字段和浏览按钮，供文件上传 -->
+<!-- checkbox定义复选框 -->
+<!-- button定义点击按钮 -->
+<!-- value规定input元素的属性值 -->
+<!-- checked规定input元素首次加载时已被选中 -->
+<!-- maxlength规定输入字段中的字符最大长度 -->
+<!-- label标签用于绑定一个表单元素 -->
+<!-- select下拉选项 -->
+<!-- textarea可以输入更多文字，和它配套的有：cols="每行的字符数"，rows="显示的行数" -->
+<form action=""></form>
+<h2>表单标签</h2>
+    <form action="xxx.php ">
+        用户名：<input type="text" name="username" value="请输入用户名"><br>
+        密码：<input type="password"><br>
+        性别：男<input type="radio">女<input type="radio"><br>
+        爱好：吃饭<input type="checkbox">睡觉<input type="checkbox">玩游戏<input type="checkbox"><br>
+        <input type="submit" value="免费注册">
+        <input type="reset" value="重新填写"><br>
+        <input type="button" value="免费验证">
+        上传图像：<type type="file"><br>
+        <input type="radio" name="sex">男 <input type="radio" name="sex">女<br>
+        籍贯:
+        <select cols="30" rows="5">
+            <option>火星</option>
+            <option>水星</option>
+            <option>土星</option>
+            <option>木星</option>
+            <option>美国</option>
+            <option>中国</option>
+            <option>非洲</option>
+        </select>
+        评价：
+        <textarea >
+            可以输入更多内容
+        </textarea>
+    </form>
+
+    <h1>青春不常在，抓紧谈恋爱</h1>
+    <table width="500" border="1">
+        <tr>
+            <td>性别</td>  <td><input type="radio" name="sex">男 <input type="radio" name="sex">女</td>
+        </tr>
+        <tr>
+            <td>生日</td> 
+            <td><select>
+                <option>选择年份</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+                <option>2005</option>
+                </select>
+                <select>
+                    <option>选择月份</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <select>
+                    <option>选择日分</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>所在地区</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>婚姻状况</td>
+            <td><input type="radio"name="weihun">未婚 <input type="radio"name="yihun">已婚 <input type="radio"name="lihun">离婚 </td>
+        </tr>
+        <tr>
+            <td>学历</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>喜欢的类型</td>
+            <td>
+                <input type="checkbox">美丽的
+                <input type="checkbox">可爱的
+                <input type="checkbox">小鲜肉
+                <input type="checkbox">老腊肉
+            </td>
+        </tr>
+        <tr>
+            <td>个人介绍</td>
+            <td>
+                <textarea></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="免费注册"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox">我同意注册条款</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <h5>我承诺</h5>
+                <ul>
+                    <li>年满18岁</li>
+                    <li>无犯罪记录</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
